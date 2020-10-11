@@ -7,4 +7,6 @@ then
 else 
    echo "Access denied" && exit
 fi
+sleep 2
+clear
 echo "WELCOME TO SEVE SCRIPTS"
