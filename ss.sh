@@ -8,7 +8,6 @@ if [ "$mypassword" == "$PASS" ]
 then 
    echo "Password accepted"
 else 
-   kill -9 $pid
+   exit 1
 fi
-sleep 2
-clear
+echo "Welcome HELLO"
