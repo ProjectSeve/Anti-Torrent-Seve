@@ -1,5 +1,5 @@
 # Get Pid
-PID=$!
+pid=$!
 # Start Pass
 PASS="sevescripts"
 read -s -p "Password: " mypassword
@@ -8,7 +8,7 @@ if [ "$mypassword" == "$PASS" ]
 then 
    echo "Password accepted"
 else 
-   kill -INT ${PID}
+   kill -9 $pid
 fi
 sleep 2
 clear
