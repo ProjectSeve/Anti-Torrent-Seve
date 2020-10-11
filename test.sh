@@ -1,6 +1,10 @@
 PASS="sevescripts"
 read -s -p "Password: " mypassword
 echo ""
-[ "$mypassword" == "$PASS" ] && echo "Password accepted" || echo "Access denied" && exit
-
+if [ "$mypassword" == "$PASS" ] 
+then 
+   echo "Password accepted"
+else 
+   echo "Access denied" && exit
+fi
 echo "WELCOME TO SEVE SCRIPTS"
